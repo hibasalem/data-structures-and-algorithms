@@ -146,12 +146,13 @@ const gruffaloCrumble = {
 };
 
 const listFoods = (recipe) => {
+  // Solution code here...
   let result = [];
-  let newArray= recipe.ingredients;
-  newArray.map(item=>{
-    let items=item.split(' ');
-    let name= items.slice(2,items.length);
-    let finalnames= name.join(' ');
+  let newArray = recipe.ingredients;
+  newArray.map(item => {
+    let items = item.split(' ');
+    let name = items.slice(2, items.length);
+    let finalnames = name.join(' ');
     result.push(finalnames);
   });
   return result;

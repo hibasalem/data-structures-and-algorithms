@@ -137,16 +137,23 @@ Return an array containing all the matches.
 const isCapitalized = (str) => {
   // Solution code here...  
   let newArray = [];
-  // return str.match(/\b[A-Z](\w)*/g)
-  arr.map(item => {
-    let regex = /\b[A-Z](\w)*/g;
-    let res = regex.test(item);
-    if (res) {
-      newArray.push(item);
-    }
-  });
+
+  let regex = /\b[A-Z](\w)*/g;
+  let res = str.match(regex)
+  if (res) {
+    return res
+  }
+
   return newArray;
 };
+
+
+// if(str.match(/\b[A-Z](\w)*/g)) {
+//   return str.match(/\b[A-Z](\w)*/g);
+// }
+// else {
+//   return [];
+// }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -285,7 +292,7 @@ xdescribe('Testing challenge 4', () => {
   });
 })
 
-describe('Testing challenge 5', () => {
+xdescribe('Testing challenge 5', () => {
   test('It should only return words that begin with a capital letter', () => {
     const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
 
@@ -298,7 +305,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   let cities = ['Cleveland', 'San Diego', 'Birmingham', 'Seattle', 'Miami', 'New York City', 'Omaha', 'Portland', 'Austin', 'Boston', 'Newport Beach', 'Hoboken'];
 
   test('It should return the cities whose names begin with the letters A through J', () => {

@@ -10,6 +10,10 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   // Solution code here...
+  let val = arr.reduce((a, b) => {
+    return Math.max(a, b);
+  });
+  return val;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -133,6 +137,13 @@ const characters = [
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+
+  let objKey = Object.values(arr);
+
+  objKey.forEach((item) => {
+    houses.push(item.house);
+  })
+
   return houses;
 };
 
@@ -151,7 +162,16 @@ hasChildrenValues(characters, 'Sansa') will return false
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
 
+  let val = false;
+  Object.values(arr).forEach(value => {
+    if (value.name === character && value.children) {
+      val = true;
+    }
+  })
+  return val;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
@@ -226,7 +246,7 @@ Run your tests from the console: jest challenges-06.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-xdescribe('Testing challenge 1', () => {
+describe('Testing challenge 1', () => {
   test('It should return the maximum number found', () => {
     expect(maxInArray([4, 2, 7, 5, 9, 2])).toStrictEqual(9);
   });
@@ -235,7 +255,7 @@ xdescribe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return the keys from an object', () => {
     expect(getCourseKeys(courseInfo)).toStrictEqual(['name', 'duration', 'topics', 'finalExam']);
   });
@@ -251,7 +271,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return an an array of names and numbers', () => {
     const startingObj = {
       'Grace Hopper': '222-303-5938',
@@ -263,7 +283,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return an array of the names of the houses', () => {
     expect(getHouses(characters)[0]).toStrictEqual('Stark');
     expect(getHouses(characters).length).toStrictEqual(7);
@@ -271,7 +291,7 @@ xdescribe('Testing challenge 5', () => {
 });
 
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return true for characters that have children', () => {
     expect(hasChildrenValues(characters, 'Daenarys')).toBeTruthy();
   });

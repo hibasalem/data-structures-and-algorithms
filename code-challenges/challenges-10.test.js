@@ -124,7 +124,7 @@ const salesData = (hours, data) => {
   // Solution code here...
   let newArray = [];
   hours.forEach((item, index) => {
-    newObj.push({ 'sales': data[index] + ' cookies', 'time': item })
+    newArray.push({ 'sales': data[index] + ' cookies', 'time': item })
   });
   return newArray;
 

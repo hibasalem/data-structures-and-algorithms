@@ -10,9 +10,7 @@ Write a function named returnTen, takes in a string and uses split and splice to
 function returnTen(str) {
   // Solution code here...
   let newArray = str.split('');
-  if (str.length > 10) {
-    newArray.splice(0, str.length - 10);
-  }
+  newArray.splice(0, str.length - 10);
   return newArray;
 }
 
@@ -32,10 +30,17 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
-  // let newArray = matrix.map(element => {
-  //   let highest = element.reduce((a, b)=> Math.max(a, b))
-  // });
 
+  let initial = 0;
+  for (let i = 0; i < matrix.length; i++) {
+
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (initial < matrix[i][j]) {
+        initial = matrix[i][j];
+      }
+    }
+  }
+  return initial;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -54,8 +59,17 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
-};
+  let initial = 0;
+  for (let i = 0; i < matrix.length; i++) {
 
+    for (let j = 0; j < matrix[i].length; j++) {
+
+      initial += matrix[i][j];
+
+    }
+  }
+  return initial;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -108,6 +122,12 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  let newArray = [];
+  hours.forEach((item, index) => {
+    newArray.push({ 'sales': data[index] + ' cookies', 'time': item })
+  });
+  return newArray;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -133,6 +153,15 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  let result = 0;
+  arr.map((val, index) => {
+    val.items.map((val2, index2) => {
+      if (val2.name === "Treats") {
+        result = val2.quantity
+      }
+    })
+  })
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -244,13 +273,13 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return the max value', () => {
     expect(findMax([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(24);
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return the total sum', () => {
     expect(totalSum([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(81);
     expect(totalSum([])).toStrictEqual(0);
@@ -263,7 +292,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should create an object of data for each store', () => {
     expect(salesData(hoursOpen, grandTotal(cookieStores))).toStrictEqual([
       { sales: '88 cookies', time: '9 a.m.' },
@@ -284,7 +313,7 @@ xdescribe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return the number 24', () => {
     expect(howManyTreats(errands)).toStrictEqual(24);
   });

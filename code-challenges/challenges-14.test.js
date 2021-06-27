@@ -185,18 +185,29 @@ Here is a sample board:
 ];
 ------------------------------------------------------------------------------------------------ */
 
-// helpCheck(b1,b2,b3){
-//   if (/*??*/){
-//     return true
-//   }
-// };
+let helpCheck = (b1, b2, b3) => {
+  if (b1 === b2 && b2 === b3 && b1.length && b2.length && b2.length) {
+    return true;
+  } else {
+    return false;
+  }
+};
 const detectTicTacToeWin = (board) => {
   // Solution code here...
-  // for (let i = 0; i < array.length; i++) {
-  //   for (let j = 0; j < array.length; j++) {
-  //     // helpCheck(board[i][j],board[j][i])
-  //   }
-  // }
+  if (
+    helpCheck(board[0][0], board[0][1], board[0][2]) ||
+    helpCheck(board[1][0], board[1][1], board[1][2]) ||
+    helpCheck(board[2][0], board[2][1], board[2][2]) ||
+    helpCheck(board[0][0], board[1][0], board[2][0]) ||
+    helpCheck(board[0][1], board[1][1], board[2][1]) ||
+    helpCheck(board[0][2], board[1][2], board[2][2]) ||
+    helpCheck(board[0][0], board[1][1], board[2][2]) ||
+    helpCheck(board[0][2], board[1][1], board[2][0])
+  ) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -289,7 +300,7 @@ describe("Testing challenge 5", () => {
   });
 });
 
-xdescribe("Testing challenge 6", () => {
+describe("Testing challenge 6", () => {
   test("It should return true if there are three in a row", () => {
     expect(
       detectTicTacToeWin([

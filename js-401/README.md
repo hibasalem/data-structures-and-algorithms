@@ -1,5 +1,6 @@
 # data-structures-and-algorithms js 401
 
-| challange         | link                                     |
-| ----------------- | ---------------------------------------- |
-| code challange 01 | [array-reverse](array-reverse/README.md) |
+| challange         | link                                               |
+| ----------------- | -------------------------------------------------- |
+| code challange 01 | [array-reverse](array-reverse/README.md)           |
+| code challange 02 | [array-insert-shift](array-insert-shift/README.md) |

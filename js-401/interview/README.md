@@ -8,4 +8,4 @@
 
 [white bored link](https://miro.com/welcomeonboard/R2R0T1Vub2ZhSHZielExcjB3WVl5NFNaRlM3OXloc1dSYTVsTU1nRmpjOFpyTDJyaGw5WVVDZkJna3NUTEs4TXwzMDc0NDU3MzYwNzAzNjM4MTEz)
 
-![code challange 02 ](./cc04.jpg)
+![code challange 02 ](./04.jpg)

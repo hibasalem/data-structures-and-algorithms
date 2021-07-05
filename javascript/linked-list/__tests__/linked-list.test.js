@@ -6,12 +6,12 @@ const LinkedList = require("../linkedList");
 // let consoleSpy;
 
 describe("Linked List", () => {
-  it("Can successfully instantiate an empty linked list", () => {
+  xit("Can successfully instantiate an empty linked list", () => {
     const ll = new LinkedList();
     expect(ll).toBeInstanceOf(LinkedList);
     expect(ll.head).toBeNull();
   });
-  it("Adds a new node with that value to the head", () => {
+  xit("Adds a new node with that value to the head", () => {
     const ll = new LinkedList();
     ll.insert("test1");
     expect(ll.head.value).toBe("test1");
@@ -19,7 +19,7 @@ describe("Linked List", () => {
 
     // console.log(ll);
   });
-  it("The head property will properly point to the first node in the linked list", () => {
+  xit("The head property will properly point to the first node in the linked list", () => {
     const ll = new LinkedList();
     ll.insert("test1");
     ll.insert("test2");
@@ -28,7 +28,7 @@ describe("Linked List", () => {
     expect(ll.head.value).toBe("test3");
     expect(ll.head.next).toBeTruthy();
   });
-  it("Can properly insert multiple nodes into the head of a linked list ", () => {
+  xit("Can properly insert multiple nodes into the head of a linked list ", () => {
     const ll = new LinkedList();
     ll.insert("test1");
     ll.insert("test2");
@@ -39,20 +39,20 @@ describe("Linked List", () => {
     expect(ll.head.next.next.value).toBe("test1");
     expect(ll.head.next.next.next).toBeNull();
   });
-  it("Will return true when finding a value within the linked list that exists", () => {
+  xit("Will return true when finding a value within the linked list that exists", () => {
     const ll = new LinkedList();
     ll.insert("test1");
     ll.insert("test2");
     expect(ll.includes("test2")).toBe(true);
   });
-  it("Will return false when searching for a value in the linked list that does not exist", () => {
+  xit("Will return false when searching for a value in the linked list that does not exist", () => {
     const ll = new LinkedList();
     ll.insert("test1");
     ll.insert("test2");
     expect(ll.includes("test3")).toBe(false);
   });
 
-  it("Can properly return a collection of all the values that exist in the linked list", () => {
+  xit("Can properly return a collection of all the values that exist in the linked list", () => {
     const ll = new LinkedList();
     ll.insert("test3");
     ll.insert("test2");

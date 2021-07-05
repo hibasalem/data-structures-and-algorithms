@@ -3,7 +3,7 @@
 const Node = require("../node");
 
 describe("node module test", () => {
-  xit("creat a node with value and next", () => {
+  it("creat a node with value and next", () => {
     const testValue = "test";
     const node = new Node(testValue);
     expect(node.value).toBe(testValue);

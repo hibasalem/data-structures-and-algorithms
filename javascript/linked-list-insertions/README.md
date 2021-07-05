@@ -1,6 +1,6 @@
 # Singly Linked List
 
-[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/30)
+[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/31)
 
 Implementation of the linked lists
 
@@ -17,9 +17,9 @@ creating classes for each of the LinkedList and the node including methods for s
   `includes()` time : o(n) , space O(n)  
   `toString()` time : o(n) , space O(n)
 
-- code chalange 06
-  `append()` time : o(n) , space O(n)
-  `insertBefore()` time : o(n) , space O(n)
+- code chalange 06  
+  `append()` time : o(n) , space O(n)  
+  `insertBefore()` time : o(n) , space O(n)  
   `insertAfter()` time : o(n) , space O(n)
 
 ![cc06](cc06.jpg)

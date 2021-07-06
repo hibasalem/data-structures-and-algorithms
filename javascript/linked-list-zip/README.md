@@ -1,6 +1,6 @@
 # Singly Linked List
 
-[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/32)
+[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/33)
 
 Implementation of the linked lists
 

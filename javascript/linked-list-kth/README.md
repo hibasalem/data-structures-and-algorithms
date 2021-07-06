@@ -25,7 +25,7 @@ creating classes for each of the LinkedList and the node including methods for s
 - code chalange 06  
   `kthFromEnd()` time : o(n) , space O(n)
 
-![cc07](cc07.jpg)
+![cc07](07.jpg)
 
 - code chalange 05
 

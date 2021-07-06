@@ -8,3 +8,4 @@
 | code challange 04 | [Mock Interviews](./code-challenges/interview/README.md)               |
 | code challange 05 | [linked lists](./linked-list/README.md)                                |
 | code challange 06 | [linked-list-insertions](./linked-list-insertions/README.md)           |
+| code challange 07 | [linked-list-kth](./linked-list-kth/README.md)                         |

@@ -10,8 +10,6 @@ creating classes for each of the LinkedList and the node including methods for s
 
 ## Approach & Efficiency
 
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
 - code chalange 05
   `insert()` time : o(1) , space O(n)  
   `includes()` time : o(n) , space O(n)  
@@ -25,7 +23,10 @@ creating classes for each of the LinkedList and the node including methods for s
 - code chalange 07
   `kthFromEnd()` time : o(n) , space O(n)
 
-![cc07](07.jpg)
+- code chalange 08
+  `zipLists()` time : o(n) , space O(n)
+
+![cc07](cc08.jpg)
 
 - code chalange 05
 
@@ -42,3 +43,7 @@ creating classes for each of the LinkedList and the node including methods for s
 - code chalange 07
 
   - **kthFromEnd** : returns the value of a given index from the end of alinked list
+
+- code chalange 08
+
+  - **zipLists** : Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.

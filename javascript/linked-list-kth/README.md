@@ -22,7 +22,7 @@ creating classes for each of the LinkedList and the node including methods for s
   `insertBefore()` time : o(n) , space O(n)  
   `insertAfter()` time : o(n) , space O(n)
 
-- code chalange 06  
+- code chalange 07 
   `kthFromEnd()` time : o(n) , space O(n)
 
 ![cc07](07.jpg)

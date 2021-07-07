@@ -10,3 +10,4 @@
 | code challange 06 | [linked-list-insertions](./linked-list-insertions/README.md)           |
 | code challange 07 | [linked-list-kth](./linked-list-kth/README.md)                         |
 | code challange 08 | [linked-list-zip](./linked-list-zip/README.md)                         |
+| code challange 09 | [linked-list-reverse](./linked-list-reverse/README.md)                 |

@@ -137,6 +137,29 @@ class LinkedList {
 
     return `head -> ${result.toString()}`;
   }
+
+  palindrome(list) {
+    let result = new LinkedList();
+    let tempNode = list.head;
+
+    while (tempNode) {
+      result.insert(tempNode.value);
+      tempNode = tempNode.next;
+    }
+
+    let tempNodeB = result.head;
+    let tempNodeA = list.head;
+
+    while (tempNodeA || tempNodeA) {
+      if (tempNodeA.value !== tempNodeB.value) {
+        return false;
+      } else {
+        tempNodeA = tempNodeA.next;
+        tempNodeB = tempNodeB.next;
+      }
+    }
+    return true;
+  }
 }
 
 module.exports = LinkedList;

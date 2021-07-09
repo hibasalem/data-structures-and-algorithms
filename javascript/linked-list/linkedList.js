@@ -8,15 +8,21 @@ class LinkedList {
   }
 
   insert(value) {
-    // try {
+    // // try {
+    // const node = new Node(value);
+    // if (this.head) {
+    //   node.next = this.head;
+    // }
+    // this.head = node;
+    // // } catch {
+    // //   console.log("add a value arrgument");
+    // // }
+
     const node = new Node(value);
     if (this.head) {
       node.next = this.head;
     }
     this.head = node;
-    // } catch {
-    //   console.log("add a value arrgument");
-    // }
   }
 
   includes(value) {

@@ -12,4 +12,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ### 401 Data Structures, Code Challenges
 
+-testcd .
+
+
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.

@@ -12,3 +12,4 @@
 | code challange 08 | [linked list zip](./linked-list-zip/README.md)                         |
 | code challange 09 | [linked list reverse](./linked-list-reverseandplind/README.md)         |
 | code challange 10 | [stack and queue](./stack-and-queue/README.md)                         |
+| code challange 11 | [stack queue pseudo](./stack-queue-pseudo/README.md)                   |

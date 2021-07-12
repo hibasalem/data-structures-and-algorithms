@@ -1,0 +1,17 @@
+{
+  "name": "stack-and-queue",
+  "version": "1.0.0",
+  "description": "[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/33)",
+  "main": "node.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "watch": "jest --verbose --coverage --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.3"
+  }
+}

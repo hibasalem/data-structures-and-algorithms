@@ -1,6 +1,7 @@
 # Stacks And Queues
 
-[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/39)
+
+[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/41)
 
 Implementation of stacks and queues using linked lists
 

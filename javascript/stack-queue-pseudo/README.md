@@ -35,7 +35,7 @@ creating classes for each of the LinkedList and the node including methods for s
 
 ---
 
-![Stacks queue pesudo](cc11.JPG)
+![Stacks queue pesudo](cc11.jpg)
 
 ---
 

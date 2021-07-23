@@ -1,6 +1,6 @@
 # Stacks And Queues
 
-[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/39)
+[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/44)
 
 Implementation of stacks and queues using linked lists
 
@@ -54,3 +54,11 @@ creating classes for each of the LinkedList and the node including methods for s
     **dequeue()** : Removes the node from the front of the queue  
     **peek()** : Returns the Value of the node located at the front of the queue  
     **isEmpty()** : Returns a boolean indicating whether or not the queue is empty
+
+- code chalange 11
+
+  - **_PseudoQueue_**
+
+  **enqueue(value)** : Inserts value into the PseudoQueue, using a first-in, first-out approach.
+
+  **dequeue()** : Removes the node from the back of the PseudoQueue

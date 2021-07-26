@@ -17,4 +17,4 @@
 | code challange 13| [brackets](./brackets/README.md)                                        | 
 | code challange 15 | [Trees](./trees/README.md)                                             |
 | code challange 16 | [Trees-findmax](./trees-findMax/README.md)                             |
-| code challange 17 | [Trees-](./17-tree-breadth-first/README.md)                            |
+| code challange 17 | [Tree breadth first](./17-tree-breadth-first/README.md)                |

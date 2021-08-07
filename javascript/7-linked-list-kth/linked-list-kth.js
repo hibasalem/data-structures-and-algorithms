@@ -86,7 +86,7 @@ class LinkedList {
     }
   }
 
-  kthFromEnd(k) {
+  /* kthFromEnd(k) {
     let tempNode = this.head;
     let tempArray = [];
 
@@ -103,6 +103,29 @@ class LinkedList {
       let tempK = tempArray.length - k;
       let result = tempArray[tempK - 1];
       return result;
+    }
+  }*/
+
+  kthFromEnd(k) {
+    let reversed = new LinkedList();
+    let tempNode = this.head;
+    let count = 0;
+
+    while (tempNode) {
+      reversed.insert(tempNode.value);
+      tempNode = tempNode.next;
+    }
+
+    let tempNodeB = reversed.head;
+
+    while (tempNodeB) {
+      if (k <= 0) {
+        return "insert positive value ";
+      } else if (count === k) {
+        return tempNodeB.value;
+      }
+      count++;
+      tempNodeB = tempNodeB.next;
     }
   }
 }

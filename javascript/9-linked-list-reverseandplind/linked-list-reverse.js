@@ -160,6 +160,36 @@ class LinkedList {
     }
     return true;
   }
+
+  findMiddle() {
+    let tempNode = this.head;
+    let fastTempNode = this.head;
+
+    while (fastTempNode.next) {
+      tempNode = tempNode.next;
+      if (fastTempNode.next.next) {
+        fastTempNode = fastTempNode.next.next;
+      } else {
+        fastTempNode = fastTempNode.next;
+      }
+    }
+    return tempNode.value;
+  }
+
+  // reverse() {
+  //   let prev = null;
+  //   let current = this.head;
+  //   let next = null;
+
+  //   while (current) {
+  //     next = currentNode.next;
+  //     currentNode.next = prev;
+  //     prev = current;
+  //     current = next;
+  //   }
+
+  //   this.head = prev;
+  // }
 }
 
 module.exports = LinkedList;

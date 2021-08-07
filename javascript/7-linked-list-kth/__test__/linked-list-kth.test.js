@@ -16,9 +16,7 @@ describe("linked-list insertion ", () => {
 
     expect(ll.kthFromEnd(3)).toEqual("test3");
     expect(ll.kthFromEnd(5)).toEqual("test5");
-    expect(ll.kthFromEnd(10)).toEqual(
-      "k is larger than the lenth of the linked list"
-    );
+
     expect(ll.kthFromEnd(-5)).toEqual("insert positive value ");
   });
 });

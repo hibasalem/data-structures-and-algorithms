@@ -15,18 +15,30 @@ class LinkedList {
     this.head = node;
   }
 
+  // includes(value) {
+  //   let result;
+  //   let tempNode = this.head;
+  //   while (tempNode.next) {
+  //     if (value == tempNode.value) {
+  //       result = true;
+  //       return result;
+  //     } else {
+  //       tempNode = tempNode.next;
+  //     }
+  //   }
+  //   result = false;
+  //   return result;
+  // }
+
   includes(value) {
-    let result;
+    let result = false;
     let tempNode = this.head;
-    while (tempNode.next) {
-      if (value == tempNode.value) {
-        result = true;
-        return result;
-      } else {
-        tempNode = tempNode.next;
+    while (tempNode) {
+      if (tempNode.value == value) {
+        return (result = true);
       }
+      tempNode = tempNode.next;
     }
-    result = false;
     return result;
   }
 

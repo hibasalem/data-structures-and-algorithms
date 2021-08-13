@@ -11,7 +11,6 @@ class BinaryTree {
     let resultArr = [];
     let _travers = (node) => {
       resultArr.push(node.value);
-      // console.log(node.value);
       if (node.left) {
         _travers(node.left);
       }

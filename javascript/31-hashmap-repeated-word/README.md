@@ -3,7 +3,7 @@
 Implementation of Hash Tables
 
 [**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/50)  
-[**code folder**]()
+[**code folder**](https://github.com/hibasalem/data-structures-and-algorithms/tree/main/javascript/31-hashmap-repeated-word)
 
 ## Challenge
 

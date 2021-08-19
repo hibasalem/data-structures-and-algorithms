@@ -17,7 +17,7 @@ Write a function that LEFT JOINs two hashmaps into a single data structure.
 
 - Hashtable
 
-  - **_`leftJoin(hash1, hash2)`_** time : O(n) , space O(n)
+  - **_`leftJoin(hash1, hash2)`_** time : O(n) , space O(n^2)
 
 ---
 

@@ -1,8 +1,5 @@
 "use strict";
 
-// const LinkedList = require("../linkedList");
-// const Node = require("../node");
-// const Hashtable = require("../hashtable");
 const treeIntersection = require("../hashmap-tree-intersection");
 const BinaryTree = require("../../15-trees/binaryTree");
 const TreeNode = require("../../15-trees/node");

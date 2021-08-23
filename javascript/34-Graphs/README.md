@@ -2,7 +2,7 @@
 
 Implementation of Hash Tables
 
-[**Pull Request 2 **](https://github.com/hibasalem/data-structures-and-algorithms/pull/54)  
+[**Pull Request 2**](https://github.com/hibasalem/data-structures-and-algorithms/pull/54)  
 [**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/53) 
 
 [**code folder**](https://github.com/hibasalem/data-structures-and-algorithms/tree/main/javascript/34-Graphs)

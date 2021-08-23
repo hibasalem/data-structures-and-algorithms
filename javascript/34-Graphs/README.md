@@ -2,7 +2,9 @@
 
 Implementation of Hash Tables
 
-[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/53)  
+[**Pull Request 2 **](https://github.com/hibasalem/data-structures-and-algorithms/pull/54)  
+[**Pull Request**](https://github.com/hibasalem/data-structures-and-algorithms/pull/53) 
+
 [**code folder**](https://github.com/hibasalem/data-structures-and-algorithms/tree/main/javascript/34-Graphs)
 
 ## Challenge
@@ -30,3 +32,6 @@ Implement your own Graph. The graph should be represented as an adjacency list
   - **_`getnodes()`_** : This method Returns all of the nodes in the graph as a collection
   - **_`getNeighbors(vertex)`_** : This method Returns a collection of edges connected to the given node
   - **_`size() `_** : This method Returns the total number of nodes in the graph
+
+
+![tests](cc35.JPG)

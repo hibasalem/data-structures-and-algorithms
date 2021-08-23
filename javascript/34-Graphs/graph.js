@@ -1,15 +1,7 @@
-class Vertex {
-  constructor(value) {
-    this.value = value;
-  }
-}
+"use strict";
 
-class Edge {
-  constructor(vertex, weight = 0) {
-    this.vertex = vertex;
-    this.weight = weight;
-  }
-}
+const Vertex = require("./vertex");
+const Edge = require("./edge");
 
 class Graph {
   constructor() {
@@ -18,6 +10,7 @@ class Graph {
 
   addNode(vertex) {
     this.adjacencyList.set(vertex, []);
+    return vertex;
   }
 
   addEdge(startVertex, endVertex, weight = 0) {
@@ -36,7 +29,7 @@ class Graph {
     for (const [vertex, edge] of this.adjacencyList.entries()) {
       result.push(vertex);
     }
-    return result;
+    return result.length > 0 ? result : null;
   }
 
   getNeighbors(vertex) {
@@ -48,8 +41,4 @@ class Graph {
   }
 }
 
-module.exports = {
-  Vertex,
-  Edge,
-  Graph,
-};
+module.exports = Graph;
